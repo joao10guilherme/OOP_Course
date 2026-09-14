@@ -1,0 +1,13 @@
+. Math library
+
+ -> set precision
+
+    double number = 12.34567;
+    setprecision(4) -> 12.34
+    setprecision(5) -> 12.345;
+    setprecision(2) -> 12;
+
+    cout << fixed << setprecision(3); -> 12.345
+    cout << fixed << setprecision(2); -> 12.34
+
+    

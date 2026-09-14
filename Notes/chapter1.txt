@@ -1,0 +1,20 @@
+. Reading Strings
+
+    -> getline(cin, s, delimitCharacter); for multi-word strings
+
+ex:
+
+string city;
+cout << "Enter city name: ";
+getline(cin, city, "\n");
+
+. Comparing Strings
+
+You can use relational operators ==, !=, <, >, <=, >= to compare two strings.
+
+string s1 = "ABC";
+string s2 = "ABE";
+
+s2 > s1 because "E" has a higher ASCII value than "C";
+
+

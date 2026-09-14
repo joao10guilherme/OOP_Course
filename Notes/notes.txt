@@ -1,0 +1,22 @@
+-> Recursive Functions
+
+ . Calls itself.
+ . A recursive functions devides the problem into two conceptual pieces: the base case (when the functions
+    doesn't call itself again), and the recursive case (when the function solves a small part of the problem and
+    calls a fresh copy of itself to work on the smaller problem).
+
+POINTERS
+
+int d = 5;
+
+pointer pd stores the address of variable d
+int* pd = &d;
+*pd += 10;
+
+Different combinations:
+
+const int *const ptr
+int *const ptr
+const int *ptr
+int *ptr
+

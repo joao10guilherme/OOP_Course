@@ -1,0 +1,8 @@
+
+
+1. pwd (print working directory) - shows the path to the current directory
+2. ls (list) - shows the content of the current directory
+3. mkdir <directory_name> (make directory) - Makes a new directory
+4. code <file_name (with_extention)> - Create a new file and open it in the text editor
+5. cd <directory_path> (change directory) - Go to a certain directory
+6. clears the terminal window
