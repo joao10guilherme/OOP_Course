@@ -10,6 +10,13 @@ Car::Car(){
     MPG = 0.0;
 }
 
+Car::Car(const std::string& m, const std::string& mdl, const int y, const double mpg){
+    setMake(m);
+    setModel(mdl);
+    setYear(y);
+    setMPG(mpg);
+}
+
 void Car::printInfo() const{
     cout << "Make:\t\t" << make << endl;
     cout << "Model:\t\t" << model << endl;
@@ -38,14 +45,8 @@ void Car::setModel(const string& mod){
     model = mod;
 }
 void Car::setYear(const int& y){
-    if(y > 1900 && y <= 2026)
-        year = y;
-    else
-        year = -1;
+    year = (y >= 1900 && y <= 2026) ? y : 1900;
 }
 void Car::setMPG(const double& mpg){
-    if(mpg > 0)
-        MPG = mpg;
-    else
-        MPG = 0;
+    MPG = (mpg > 0.0) ? mpg : 0.0;
 }
