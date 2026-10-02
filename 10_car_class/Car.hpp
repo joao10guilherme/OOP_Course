@@ -16,6 +16,9 @@ public:
     std::string getModel() const;
     int getYear() const;
     double getMPG() const;
+    double getMileage() const;
+    double getFuel_capacity() const;
+    double getFuel_level() const;
     // setters
     void setMake(const std::string& m);
     void setModel(const std::string& mod);
@@ -26,6 +29,9 @@ private:
     std::string model;
     int year;
     double MPG;
+    double mileage;
+    double fuel_capacity;
+    double fuel_level;
 };
 
 #endif
