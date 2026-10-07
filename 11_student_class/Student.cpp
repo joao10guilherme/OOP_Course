@@ -8,12 +8,18 @@ int Student::total_students = 0;
 int Student::next_id = 1000;
 double Student::total_gpa = 0.0;
 
-Student::Student(const string& n, double st_gpa) : name(n), gpa(st_gpa){
+Student::Student(const string& n, double st_gpa) : name(n), gpa(st_gpa){ // initializer list -> only works for the constructor
     total_students++;
     id = "B000" + to_string(next_id);
     next_id += 5;
     total_gpa += st_gpa;
-}// initializer list -> only works for the constructor
+}
+
+Student::~Student(){
+    cout << "Destructor was called\n" << endl;
+    total_students--;
+    total_gpa -= gpa;
+}
 
 bool Student::canGraduate() const{
     return gpa >= required_gpa;

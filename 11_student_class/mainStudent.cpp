@@ -12,14 +12,14 @@ int main(){
     Alice.printStudentInfo();
     Margaret.printStudentInfo();
 
-    // for(int i = 1; i < 100; i++){
-    //     Student("test", 1.1);
-    // }
-
+    for(int i = 1; i < 10; i++){
+        Student test_student("test", 1.0);
+    }
+    
     cout << "\n\n";
     cout << "Required GPA: " << Student::getRequiredGPA() << endl; // Access static method
     cout << "Total number of students: " << Student::getTotalStudents() << endl;
     cout << "Average GPA: " << Student::getAverageGPA() << endl;
-
+    
     return 0;
 }

@@ -5,7 +5,8 @@ using namespace std;
 
 class Student{
 public:
-    Student(const string& n, double st_gpa);
+    Student(const string& n, double st_gpa); // Constructor
+    ~Student(); // Destructor -> cannot be overloaded (only one version is allowed)
 
     bool canGraduate() const;
     void printStudentInfo() const;
