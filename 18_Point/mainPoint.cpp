@@ -4,26 +4,24 @@ using namespace std;
 
 int main(){
 
-    Point p1(2,3);
-    Point p2(6,5);
-    Point p3(87,88);
+    Point p1(2,3,"p1");
+    Point p2(6,5,"p2");
 
-    cout << p3.toString() << endl;
+    // ++p1;
+    // cout << p1.toString() << endl;
 
-    if(p1 != p2){
-        cout << (char) p3[0];
-    }else{
-        cout << (char) p3[1];
-    }
+    // Point p3 = p1++ + ++p2;
+    // cout << p1.toString() << endl;
+    // cout << p2.toString() << endl;
+    // cout << p3.toString() << endl;
 
-    p1[0] = 40 + 44;
-    cout << (char) p1[0];
+    p1 = p2;
+    cout << p1 << endl;
 
-    p1[1] = p1[1] + 3;
-    p2[1] = p2[1] + 4;
-    Point p4 = p1 * p2;
-    cout << (char)(p4[1]-2);
+    Point p3(0, 0, "");
+    cin >> p3;
+    cout << p3;
 
-    cout << "TU";
+
     return 0;
 }
